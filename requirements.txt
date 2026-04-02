@@ -1,0 +1,10 @@
+# This project does not use Python packages for runtime or build steps.
+# It is a Node.js/Express + React/Vite application.
+#
+# Environment used during setup:
+# Node.js==24.14.0
+# npm==11.9.0
+#
+# Install JavaScript dependencies instead:
+#   cd server && npm install
+#   cd ../client && npm install
