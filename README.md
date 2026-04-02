@@ -252,6 +252,4 @@ Task_Manager_System-main/
 `-- requirements.txt
 ```
 
-## Submission Note
 
-The original repository was already built with React/Vite rather than Angular. To keep the implementation stable and aligned with the supplied codebase, the project was upgraded in its existing stack instead of being rewritten from scratch in Angular.
