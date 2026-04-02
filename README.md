@@ -60,7 +60,7 @@ Use this format:
 
 ```env
 NODE_ENV=development
-MONGODB_URI=mongodb://YOUR_USERNAME:YOUR_PASSWORD@ac-kxxyn32-shard-00-00.9yv5kyx.mongodb.net:27017,ac-kxxyn32-shard-00-01.9yv5kyx.mongodb.net:27017,ac-kxxyn32-shard-00-02.9yv5kyx.mongodb.net:27017/admin_dashboard?ssl=true&replicaSet=atlas-namhup-shard-0&authSource=admin&appName=Cluster0
+MONGODB_URI=<paste-your-atlas-connection-string-here>
 JWT_SECRET=your_secure_secret_here
 PORT=8800
 ```
@@ -68,7 +68,7 @@ PORT=8800
 Notes:
 
 - Do not leave spaces around `=`
-- Replace `YOUR_USERNAME` and `YOUR_PASSWORD`
+- Paste the exact connection string copied from MongoDB Atlas `Connect > Drivers`
 - Keep the database name `admin_dashboard`
 - If your password contains special characters like `@`, `#`, `/`, or `:`, URL-encode it
 - Do not commit real credentials
