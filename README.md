@@ -28,32 +28,10 @@ This project upgrades the original task manager into an admin-focused dashboard 
 - npm used during setup: `v11.9.0`
 - Recommended minimum: Node.js `18+`, npm `9+`
 
-## Project Paths
-
-- Root: `E:\projt\proj1\Task_Manager_System-main`
-- Backend: `E:\projt\proj1\Task_Manager_System-main\server`
-- Frontend: `E:\projt\proj1\Task_Manager_System-main\client`
-- Environment file: `E:\projt\proj1\Task_Manager_System-main\server\.env`
-
 ## Local Setup
 
 ### 1. Open the project
-
-```powershell
-cd E:\projt\proj1\Task_Manager_System-main
-```
-
 ### 2. Configure MongoDB Atlas
-
-In MongoDB Atlas, make sure all of these are done:
-
-1. Create a cluster.
-2. Create a database user with `Read and write to any database`.
-3. Add your IP in `Network Access`, or temporarily allow `0.0.0.0/0`.
-4. Copy the connection string from `Connect > Drivers`.
-
-Collections are created automatically by Mongoose, so you do not need to create them manually.
-
 ### 3. Create `server/.env`
 
 Use this format:
@@ -64,70 +42,10 @@ MONGODB_URI=<paste-your-atlas-connection-string-here>
 JWT_SECRET=your_secure_secret_here
 PORT=8800
 ```
-
-Notes:
-
-- Do not leave spaces around `=`
-- Paste the exact connection string copied from MongoDB Atlas `Connect > Drivers`
-- Keep the database name `admin_dashboard`
-- If your password contains special characters like `@`, `#`, `/`, or `:`, URL-encode it
-- Do not commit real credentials
-
 ### 4. Install dependencies
-
-Backend:
-
-```powershell
-cd E:\projt\proj1\Task_Manager_System-main\server
-npm install
-```
-
-Frontend:
-
-```powershell
-cd E:\projt\proj1\Task_Manager_System-main\client
-npm install
-```
-
 ### 5. Start the backend
-
-```powershell
-cd E:\projt\proj1\Task_Manager_System-main\server
-npm start
-```
-
-Expected backend logs:
-
-```text
-DB connection established
-Server listening on 8800
-```
-
 ### 6. Start the frontend
-
-Open a second terminal:
-
-```powershell
-cd E:\projt\proj1\Task_Manager_System-main\client
-npm run dev
-```
-
 ### 7. Open the app
-
-Open the frontend in your browser:
-
-- [http://localhost:5173](http://localhost:5173)
-
-Important:
-
-- `http://localhost:8800` is only the backend server
-- `http://localhost:8800/` and `http://localhost:8800/api` are not the main app pages
-
-### 8. First login flow
-
-- If the database is empty, register a new account from the login page
-- The first registered user becomes the admin
-- Then sign in and use the dashboard
 
 ## How to View the Database in MongoDB Atlas
 
@@ -148,37 +66,9 @@ And collections such as:
 
 ## Run Commands Summary
 
-Backend:
-
-```powershell
-cd E:\projt\proj1\Task_Manager_System-main\server
-npm start
-```
-
-Frontend:
-
-```powershell
-cd E:\projt\proj1\Task_Manager_System-main\client
-npm run dev
-```
-
 Frontend URL:
 
 - [http://localhost:5173](http://localhost:5173)
-
-## Build and Verification
-
-Frontend production build:
-
-```powershell
-cd E:\projt\proj1\Task_Manager_System-main\client
-npm run build
-```
-
-Notes:
-
-- The frontend build was verified successfully
-- Vite reported a large chunk warning, but the build completed
 
 ## Main API Routes
 
